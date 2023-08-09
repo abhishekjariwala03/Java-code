@@ -18,7 +18,7 @@ public class Connection {
     Connection() {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/PhoneBook","root","Abhi@2003");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/PhoneBook","Give your mysql user name","you mysql password");
             stmt = con.createStatement();
             System.out.println("Database Connected");
         }catch(Exception ex){
